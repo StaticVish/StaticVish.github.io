@@ -1,0 +1,1 @@
+# StaticVish.github.io
