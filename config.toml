@@ -1,0 +1,5 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "Site of Visveswaran Vaidyanathan a.k.a StaticVish"
+theme = "custom"
+relativeURLs = true
