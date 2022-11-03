@@ -2,6 +2,7 @@
 title: "About me"
 draft: false
 weight: 0
+type: "about"
 ---
 
 With over 20 years of experience in tech, Visveswaran is passionate about helping organisations apply SOLID, Lean, Agile, DevOps & SRE principles to achieve meaningful and tangible digital transformation.
