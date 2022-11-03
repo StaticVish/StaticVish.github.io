@@ -28,7 +28,7 @@
                     {{ range .RegularPages }}
                     {{ $pageUrl := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
                     {{ $pageUrlFull := (printf "/%s" $pageUrl) }}
-                        <li><a href="{{ $pageUrlFull }}/">{{ .Title }}</a></li>
+                        <li><a href="{{ $pageUrlFull }}">{{ .Title }}</a></li>
                     {{ end }}
                     </ul>
                 </div>
