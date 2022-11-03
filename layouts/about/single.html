@@ -1,0 +1,15 @@
+{{ define "main" }}
+<div class="container text-left">
+  <div class="row">
+    <div class="col-3 col-md-3">
+      {{ $image := resources.Get "images/background.jpg" }}
+      {{ with $image }}
+        <img src="{{ .RelPermalink }}" class="img-fluid" alt="headshot-image">
+      {{ end }}
+    </div>
+    <div class="col-9 col-md-9">
+      {{.Content}} 
+    </div>
+  </div>
+</div>
+{{ end }}

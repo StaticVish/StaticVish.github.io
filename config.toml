@@ -1,5 +1,0 @@
-baseURL = "https://staticvish.github.io/"
-languageCode = "en-us"
-title = "Site of Visveswaran Vaidyanathan a.k.a StaticVish"
-theme = "custom"
-canonifyURLs = "true"
