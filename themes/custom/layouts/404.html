@@ -7,13 +7,20 @@
 {{ end }}
 
 {{ define "main" }}
-        <div class="container px-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1>Page Lost in the space !! </h1>
-                    <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
-                </div>
-            </div>
-            <br /><br /><br />
+<div class="container px-6">
+    {{ $image := resources.GetRemote "https://i.stack.imgur.com/9RIrj.png" }}
+    {{ with $image }}
+    <div class="row">
+      <img src="{{ .RelPermalink }}" class="img-fluid" alt="headshot-image">
+    </div>
+    {{ end }}
+    <div class="row">
+        https://i.stack.imgur.com/9RIrj.png
+        <div class="col-md-12">
+            <h1>Page Lost in the space !! </h1>
+            <h1 id="title"><a href="{{ "" | relURL }}">Go Home</a></h1>
         </div>
+    </div>
+    <br /><br /><br />
+</div>
 {{ end }}
