@@ -4,7 +4,8 @@
             Visveswaran Vaidyanathan
             {{ with .Site.LastChange }}
             <b>Last updated: {{ . | dateFormat "Jan 2, 2006" }}</b>
-            {{end}}             
+            {{end}}      
+            {{ .WordCount }} Words       
         </div>
     </div>
 </footer>
