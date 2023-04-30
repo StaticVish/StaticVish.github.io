@@ -1,11 +1,27 @@
 {{ define "main" }}
-<main aria-role="main">
-  <header class="homepage-header">
-    <h1>{{.Title}}</h1>
+<div class="container text-left">
+
+  <div class="row text-center">
+    <h1 class="animate__animated animate__infinite animate__flash animate__slow">{{.Title}}</h1>
     {{ with .Params.subtitle }}
     <span class="subtitle">{{.}}</span>
     {{ end }}
-  </header>
-  <i> {{.Content}} </i>
-</main>
+  </div>
+
+  <div class="row">
+    <div class="col-12 col-md-12" id="background">
+      {{ $image := resources.Get "images/background.jpg" }}
+      {{ with $image }}
+        <img src="{{ .RelPermalink }}" class="img-fluid" alt="headline-image">
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-9 col-md-9">
+      {{.Content}} 
+    </div>
+  </div>
+
+</div>
 {{ end }}

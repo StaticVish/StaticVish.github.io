@@ -2,7 +2,7 @@
 <div class="container text-left">
   <div class="row">
     <div class="col-3 col-md-3">
-      {{ $image := resources.Get "images/background.jpg" }}
+      {{ $image := resources.Get "images/profile.jpg" }}
       {{ with $image }}
         <img src="{{ .RelPermalink }}" class="img-fluid" alt="headshot-image">
       {{ end }}
