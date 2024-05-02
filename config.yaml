@@ -1,11 +1,58 @@
-baseURL: https://staticvish.github.io/
+baseURL: https://www.vvisveswaran.xyz/
 languageCode: en-us
-title: Site of Visveswaran Vaidyanathan a.k.a StaticVish
-theme: custom
+title: Visveswaran Vaidyanathan
+theme: 
+  - PaperMod
 canonifyURLs: true
-enableGitInfo: true
+
 params:
-  author: Visveswaran Vaidyanathan
-  description: StaticVish's Awesome Site
-  brand: StaticVish's Awesome Site
-  
+  showReadingTime: true
+  showToc: true
+  showBreadCrumbs: true
+  showPostNavLinks: true
+  showCodeCopyButtons: true
+  profileMode:
+    enabled: true
+    title: "Visveswaran Vaidyanathan"
+    subtitle: "A Polygot Software Engineer"
+    imageUrl: "images/profile.jpg"
+    imageTitle: "static-mutton-chop-developer"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Ramblings
+        url: "/blog"
+      - name: Profile
+        url: "/about"
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/StaticVish"
+    - name: github
+      url: "https://github.com/StaticVish"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/visveswaran-vaidyanathan/"
+
+
+
+taxonomies:
+  series:
+    - "Intro to Coding"
+
+menu:
+  main:
+    - identifier: about
+      name: Profile
+      url: /about/
+      weight: 10
+    - identifier: blog
+      name: Ramblings
+      url: /blog/
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 40
