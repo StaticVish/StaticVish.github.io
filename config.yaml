@@ -6,11 +6,12 @@ theme:
 canonifyURLs: true
 
 params:
-  showReadingTime: true
-  showToc: true
-  showBreadCrumbs: true
-  showPostNavLinks: true
-  showCodeCopyButtons: true
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  ShowReadingTime: true
+  ShowToc: true
+  ShowBreadCrumbs: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
   profileMode:
     enabled: true
     title: "Visveswaran Vaidyanathan"
@@ -33,26 +34,29 @@ params:
       url: "https://www.linkedin.com/in/visveswaran-vaidyanathan/"
 
 
-
-taxonomies:
-  series:
-    - "Intro to Coding"
-
-menu:
-  main:
-    - identifier: about
-      name: Profile
-      url: /about/
-      weight: 10
-    - identifier: blog
-      name: Ramblings
-      url: /blog/
-      weight: 20
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 30
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 40
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - identifier: about
+          name: Profile
+          url: /about/
+          weight: 10
+        - identifier: blog
+          name: Ramblings
+          url: /blog/
+          weight: 20
+        - identifier: categories
+          name: Categories
+          url: /categories/
+          weight: 30
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 40
