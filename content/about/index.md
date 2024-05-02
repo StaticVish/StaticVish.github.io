@@ -1,7 +1,7 @@
 ---
 title: "About me"
 draft: false
-weight: 0
+weight: 1
 type: "about"
 ---
 

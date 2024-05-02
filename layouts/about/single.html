@@ -4,7 +4,7 @@
     <div class="col-3 col-md-3">
       {{ $image := resources.Get "images/profile.jpg" }}
       {{ with $image }}
-        <img src="{{ .RelPermalink }}" class="img-fluid" alt="headshot-image">
+        <img src="{{ .RelPermalink }}" class="img-fluid" alt="headshot-image" style="width: 120px;height: 120px;">
       {{ end }}
     </div>
     <div class="col-9 col-md-9">
